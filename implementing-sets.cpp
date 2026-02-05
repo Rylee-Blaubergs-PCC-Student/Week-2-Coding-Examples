@@ -35,12 +35,16 @@ bool setAddItem(int set[], int& size, int maxSize, int newNum){
 
 
 bool setDeleteItem(int set[], int& size, int deleteNum){
+  // iterate through array
     for (int i = 0; i < size; i++){
+      // check if current iteration is our delete num
         if (set[i] == deleteNum){
+          // make new for loop starting at index i or the deleteNum
             for (int j = i; j < size - 1; j++) {
+              // "delete num" by replacing it with the number ahead of it
                 set[j] = set[j + 1];
             }
-
+            // deicremate size to account for the removal
             size--;
             return true;
         }
