@@ -22,10 +22,12 @@ bool setContains(const int set[], const int size, int searchNum){
 }
 
 bool setAddItem(int set[], int& size, int maxSize, int newNum){
+  // do a initial check for if there room for a new number and if the number hasn't already been added
     if (size >= maxSize || setContains(set, size, newNum)) {
         return false;
     }
 
+    // place newNum and increase size by one
     set[size] = newNum;
     size++;
     return true;
