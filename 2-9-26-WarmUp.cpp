@@ -25,17 +25,22 @@ int main() {
    }
 
 // get all data from txt file
-//    for (int i = 0; i < 5; i++) {
-//     inFS >> items[i], prices[i], amounts[i];
-//    }
-while (!inFS.eof()) {
-    count++;
-    inFS >> items[count], prices[count], amounts[count];
-}
+   for (int i = 0; i < 4; i++) {
+    inFS >> items[i];
+    inFS >> prices[i];
+    inFS >> amounts[i];
+   }
+
+// while (!inFS.eof()) {
+//     count++;
+//     inFS >> items[count];
+//     inFS >> prices[count];
+//     inFS >> amounts[count];
+// }
 
    
 // echo data from txt file
-   for (int i = 0; i < 5; i++) {
+   for (int i = 0; i < 4; i++) {
    cout << "item: " << items[i] << ", ";
    cout << "price: " << prices[i] << ", ";
    cout << "amount: " << amounts[i];
