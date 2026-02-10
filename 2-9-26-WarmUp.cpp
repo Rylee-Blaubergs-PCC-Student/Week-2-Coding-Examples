@@ -11,7 +11,7 @@ int main() {
    double prices[DATACAP];
    int amounts[DATACAP];
 
-
+   int count = 0;
 
     ifstream inFS;
 
@@ -25,19 +25,24 @@ int main() {
    }
 
 // get all data from txt file
-   for (int i = 0; i < 5; i++) {
-    inFS >> items[i], prices[i], amount[i];
-   }
+//    for (int i = 0; i < 5; i++) {
+//     inFS >> items[i], prices[i], amounts[i];
+//    }
+while (!inFS.eof()) {
+    count++;
+    inFS >> items[count], prices[count], amounts[count];
+}
+
    
 // echo data from txt file
    for (int i = 0; i < 5; i++) {
    cout << "item: " << items[i] << ", ";
    cout << "price: " << prices[i] << ", ";
-   cout << "amount: " << amount[i];
+   cout << "amount: " << amounts[i];
    cout << endl;
    }
     
-
+   inFS.close();
 
 
 }
