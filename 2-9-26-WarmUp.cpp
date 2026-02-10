@@ -24,19 +24,12 @@ int main() {
       return 1; // 1 indicates error
    }
 
-// get all data from txt file
-   for (int i = 0; i < 4; i++) {
-    inFS >> items[i];
-    inFS >> prices[i];
-    inFS >> amounts[i];
-   }
 
-// while (!inFS.eof()) {
-//     count++;
-//     inFS >> items[count];
-//     inFS >> prices[count];
-//     inFS >> amounts[count];
-// }
+while (!inFS.eof()) {
+    inFS >> items[count] >> prices[count] >> amounts[count];
+
+    count++;
+}
 
    
 // echo data from txt file
