@@ -1,0 +1,8 @@
+Andrew 87000 5.5
+Priya 79500	6.5
+Leigh 55000 4.5
+Leila 67500 5.25
+Albert 75000 3.2
+Alex 89500 4.5
+Nina 75000 6.2
+Mina 89500 4.5

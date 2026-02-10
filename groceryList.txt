@@ -1,0 +1,4 @@
+milk 3.49 1
+apple 0.39 4
+banana 0.29 8
+bread 2.50 2
